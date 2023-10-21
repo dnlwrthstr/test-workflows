@@ -10,3 +10,7 @@ jobs:
          ref: main
       - name: Show me the answer
         run: cat answer.txt
+      - name: Step with a secret
+        run: |
+          echo "Hello World"
+          echo "This is a secret value: ${{ secrets.SECRET_VALUE }}"
